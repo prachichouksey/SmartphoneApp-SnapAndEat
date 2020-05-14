@@ -65,9 +65,28 @@ Compute bA = T<sub>ab</sub>
 - **Temporal Navigation** - Use the back button to navigate around the app, taking you to where you were last
 - **Ancestral navigation (AKA Hierarchical Navigation)** - Takes you up the app hierarchy
 
+```
+getActivity().getActionBar().setDisplayHomeAsUpEnabled(true) 
+```
+
 ---
 
-### Code to create a button and on click open activity
+
+### Intents
+- **Explicit (Navigation with App)** - To start a specific component ( a specific Activity Instance)
+
+Explicit Intents have a specified a component(via setComponent(ComponentName) or setClass(Context, Class)), which provides the exact class to be run
+
+- **Implicit (Other Apps)**
+To start any component that can handle the intended action (such as “Capture a Photo” or display “Map”)
+
+ - Build an Implicit Intent
+ - Verify App to Receive the Intent
+ - Start an Activity
+
+ ---
+
+ ### Code to create a button and on click open activity
 ```
   public class MainActivity extends AppCompatActivity {
     Button button;

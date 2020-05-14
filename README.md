@@ -46,6 +46,27 @@ WebView myWebView = new WebView(activityContext);
 setContentView(myWebView);
 myWebView.loadUrl("http://www.example.com");
 ```
+WebView on button click
+
+```
+public class MainActivity extends AppCompatActivity {
+
+ WebView web;
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.fgfg);
+    Button bt = (Button)findViewById(R.id.button);
+     web =(WebView)findViewById(R.id.web);
+    bt.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            web.setVisibility(View.VISIBLE);
+            startWebView("http://www.youtube.com");
+        }
+    });
+}
+```
 ## SetArgs and GetArgs
 ```
 public static StuffDetailsFragment newInstance(int id, String name, String location) {
