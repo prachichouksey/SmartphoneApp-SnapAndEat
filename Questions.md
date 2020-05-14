@@ -97,9 +97,25 @@ To start any component that can handle the intended action (such as “Capture a
          @Override
          public void onClick(View v) {
             Intent intent = new Intent(this, NewActivity.class);
+            String strName = "STRING_VALUE";
+            intent.putExtra("STRING_KEY", strName);
             startActivity(intent);
          }
       });
+    }
+
+```
+
+### Given textview with id, instantiate activity
+```
+  public class MainActivity extends AppCompatActivity {
+    TextView textview;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+      super.onCreate(savedInstanceState);
+      setContentView(R.layout.activity_main);
+      textview = (TextView) findViewById(R.id.textview);
+      textview.setText("My Text");
     }
 
 ```
