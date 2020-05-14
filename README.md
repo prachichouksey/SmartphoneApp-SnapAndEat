@@ -87,3 +87,12 @@ public void onConfigurationChanged(Configuration newConfig)
      Toast.makeText(this, "portrait", Toast.LENGTH_SHORT).show();    
   }
 }
+```
+
+## Simple Adapter
+```
+ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items);
+ListView listView = (ListView) findViewById(R.id.lvItems);
+listView.setAdapter(itemsAdapter);
+```
+    
