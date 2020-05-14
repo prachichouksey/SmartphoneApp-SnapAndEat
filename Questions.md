@@ -132,6 +132,6 @@ To start any component that can handle the intended action (such as “Capture a
   - together with an imaginary point of infinity θ, where a,b  <belongs to symbol>  Zp and the condition
     - **4a<sup>3</sup>+27b<sup>2</sup> ≠ 0 mod p**
 - Note that Zp = {0,1,…, p -1} is a set of integers with modulo p arithmetic
-![alt text](images/ECC_Formula_1.png)
+![alt text](https://github.com/prachichouksey/SmartphoneApp-SnapAndEat/blob/master/images/ECC_Formula_1.PNG)
 
-![alt text](images/Elliptic_Curve_Point_Addition_and_Doubling_Formulas.png)
+![alt text](https://github.com/prachichouksey/SmartphoneApp-SnapAndEat/blob/master/images/Elliptic_Curve_Point_Addition_and_Doubling_Formulas.PNG)
