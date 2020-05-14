@@ -95,4 +95,23 @@ ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, android.R.lay
 ListView listView = (ListView) findViewById(R.id.lvItems);
 listView.setAdapter(itemsAdapter);
 ```
-    
+
+## Fragment inflate and initialize
+
+Inside Activity:
+```
+StuffListFragment stuffListFragment = new StuffListFragment();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, stuffListFragment,
+                "STUFF_LIST_FRAGMENT").commit();
+```
+
+Inside Fragment:
+```
+@Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+
+        View view = inflater.inflate(R.layout.fragment_stuff_list, container, false);
+        return view;
+    }
+  ```
