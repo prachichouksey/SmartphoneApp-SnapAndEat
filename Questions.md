@@ -134,4 +134,6 @@ To start any component that can handle the intended action (such as “Capture a
 - Note that Zp = {0,1,…, p -1} is a set of integers with modulo p arithmetic
 ![alt text](https://github.com/prachichouksey/SmartphoneApp-SnapAndEat/blob/master/images/ECC_Formula_1.PNG)
 
+- Elliptic Curve Point Addition and Doubling Formulas
+
 ![alt text](https://github.com/prachichouksey/SmartphoneApp-SnapAndEat/blob/master/images/Elliptic_Curve_Point_Addition_and_Doubling_Formulas.PNG)
