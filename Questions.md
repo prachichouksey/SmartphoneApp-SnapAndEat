@@ -58,3 +58,26 @@ Compute bA = T<sub>ab</sub>
   - Alice computes aB=a(bP)=abP
   - Bob computes bA=b(aP)=abP since group is associative
 - One of the coordinates of the point T<sub>AB</sub> (usually the x-coordinate) can be used as session key (often after applying a hash function)
+
+### Intents
+Explicit (Navigation with App) - To start a specific component ( a specific Activity Instance)
+
+Explicit Intents have a specified a component(via setComponent(ComponentName) or setClass(Context, Class)), which provides the exact class to be run
+
+Implicit (Other Apps)
+To start any component that can handle the intended action (such as “Capture a Photo” or display “Map”)
+
+Build an Implicit Intent
+Verify App to Receive the Intent
+Start an Activity
+
+
+
+### Navigation
+Temporal Navigation- Use the back button to navigate around the app, taking you to where you were last
+Ancestral navigation-(AKA Hierarchical Navigation) Takes you up the app hierarchy
+
+```
+getActivity().getActionBar().setDisplayHomeAsUpEnabled(true) 
+```
+
