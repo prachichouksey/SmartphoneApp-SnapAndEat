@@ -29,7 +29,8 @@ AlertDialog alertDialog = new AlertDialog.Builder(holder.mView.getContext()).cre
 ```        
 # Webview     
 WebView via XML:
-```<WebView
+```
+<WebView
     android:id="@+id/webview"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
