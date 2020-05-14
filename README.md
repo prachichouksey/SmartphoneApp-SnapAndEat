@@ -344,7 +344,7 @@ protected void onPause()
 }
 ```
 
-## Notifications
+### Notifications
 
 ```
 Following are the three types of android notifications:
@@ -354,7 +354,7 @@ Status Notification – Shows notification message and displayed till. user acti
 Dialog Notification – Comes out of an active Activity.
 ```
 
-## onActivityResult Code
+### onActivityResult Code
 
 Define constant
 ```
@@ -388,5 +388,13 @@ In custom dialog activity use this code to set result
 Intent intent = getIntent();
 intent.putExtra("key", value);
 setResult(RESULT_OK, intent);
+finish();
+```
+
+### Flags in intent
+```
+Intent intent=new Intent(getActivity(),CrimeListActivity.class);
+intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+startActivity(intent);
 finish();
 ```
