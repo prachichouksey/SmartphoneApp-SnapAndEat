@@ -35,7 +35,7 @@
 ---
 
 ### Deffie Helman key exchange
-- Given a prime p, a suitable elliptic curve E and a point P=(xP,yP)
+- Given a prime p, a suitable elliptic curve E and a point P=(x<sub>P</sub>,y<sub>P</sub>)
 - The Elliptic Curve Diffie-Hellman Key Exchange is defined by the following protocol:
 - <i>Draw an arrow from Alice to bob and another bon to alice</i>
 
