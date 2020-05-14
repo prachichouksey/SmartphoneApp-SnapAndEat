@@ -101,8 +101,7 @@ listView.setAdapter(itemsAdapter);
 Inside Activity:
 ```
 StuffListFragment stuffListFragment = new StuffListFragment();
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, stuffListFragment,
-                "STUFF_LIST_FRAGMENT").commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, stuffListFragment).commit();
 ```
 
 Inside Fragment:
