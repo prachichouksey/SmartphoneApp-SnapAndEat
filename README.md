@@ -1,6 +1,6 @@
 # SmartphoneApp-SnapAndEat
 
-# AlertDialog
+## AlertDialog
 ``` 
 AlertDialog alertDialog = new AlertDialog.Builder(holder.mView.getContext()).create();
                 alertDialog.setTitle("Alert Dialog");
@@ -27,7 +27,7 @@ AlertDialog alertDialog = new AlertDialog.Builder(holder.mView.getContext()).cre
             }
         });
 ```        
-# Webview     
+## Webview     
 WebView via XML:
 ```
 <WebView
@@ -46,3 +46,28 @@ WebView myWebView = new WebView(activityContext);
 setContentView(myWebView);
 myWebView.loadUrl("http://www.example.com");
 ```
+## SetArgs and GetArgs
+```
+public static StuffDetailsFragment newInstance(int id, String name, String location) {
+        StuffDetailsFragment fragment = new StuffDetailsFragment();
+        Bundle args = new Bundle();
+        args.putInt(ARG_PARAM1, id);
+        args.putString(ARG_PARAM2, name);
+        args.putString(ARG_PARAM3, location);
+        fragment.setArguments(args);
+        return fragment;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (getArguments() != null) {
+            mId = getArguments().getInt(ARG_PARAM1);
+            mName = getArguments().getString(ARG_PARAM2);
+            mLocation = getArguments().getString(ARG_PARAM3);
+        }
+        setHasOptionsMenu(true);
+        ((MainActivity) getActivity())
+                .setActionBarTitle("Stuff Details");
+    }
+    ```
