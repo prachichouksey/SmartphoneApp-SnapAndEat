@@ -106,6 +106,8 @@ To start any component that can handle the intended action (such as “Capture a
 
 ```
 
+---
+
 ### Given textview with id, instantiate activity
 ```
   public class MainActivity extends AppCompatActivity {
@@ -117,5 +119,16 @@ To start any component that can handle the intended action (such as “Capture a
       textview = (TextView) findViewById(R.id.textview);
       textview.setText("My Text");
     }
-
+  }
 ```
+
+---
+
+### ECC formula
+- In cryptography, we are interested in elliptic curves module a prime **p**
+- **Definition: Elliptic Curves over prime fields**
+  - The elliptic curve over Z<sub>p</sub>, p>3 is the set of all pairs (x,y)  <belongs to symbol>  Z<sub>p</sub> which fulfill
+    - **y<sup>2</sup> = x<sup>3</sup> + ax + b mod p**
+  - together with an imaginary point of infinity θ, where a,b  <belongs to symbol>  Zp and the condition
+    - **4a<sup>3</sup>+27b<sup>2</sup> ≠ 0 mod p**
+- Note that Zp = {0,1,…, p -1} is a set of integers with modulo p arithmetic
