@@ -344,4 +344,12 @@ protected void onPause()
 }
 ```
 
-  
+## Notifications
+
+```
+Following are the three types of android notifications:
+
+Toast Notification – Shows message that fades away after a few seconds. (Background type also)
+Status Notification – Shows notification message and displayed till. user action. (Background type also)
+Dialog Notification – Comes out of an active Activity.
+```
