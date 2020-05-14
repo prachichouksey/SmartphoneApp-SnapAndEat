@@ -58,3 +58,29 @@ Compute bA = T<sub>ab</sub>
   - Alice computes aB=a(bP)=abP
   - Bob computes bA=b(aP)=abP since group is associative
 - One of the coordinates of the point T<sub>AB</sub> (usually the x-coordinate) can be used as session key (often after applying a hash function)
+
+---
+
+### Navigations in android
+- **Temporal Navigation** - Use the back button to navigate around the app, taking you to where you were last
+- **Ancestral navigation (AKA Hierarchical Navigation)** - Takes you up the app hierarchy
+
+---
+
+### Code to create a button and on click open activity
+```
+  public class MainActivity extends AppCompatActivity {
+    Button button;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+      button = (Button) findViewById(R.id.button);
+      button.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+            Intent intent = new Intent(this, NewActivity.class);
+            startActivity(intent);
+         }
+      });
+    }
+
+```
