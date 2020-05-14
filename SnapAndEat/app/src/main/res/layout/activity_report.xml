@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coordinatorLayout2"
+    tools:context=".ReportActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100">
+
+<!--        <LinearLayout-->
+<!--            android:gravity="center"-->
+<!--            android:layout_weight="4"-->
+<!--            android:layout_margin="8dp"-->
+<!--            android:background="#FFFFFF"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:text="Report Period:    "-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="20dp"-->
+<!--                />-->
+
+<!--            <Spinner-->
+<!--                android:id = "@+id/spinner"-->
+<!--                android:layout_width = "match_parent"-->
+<!--                android:layout_height = "wrap_content"-->
+<!--                android:prompt = "@string/app_name"-->
+<!--                android:gravity="center"-->
+
+<!--                />-->
+<!--        </LinearLayout>-->
+<!--        <View-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:background="#E5E5E5"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0.5dip"/>-->
+<!--        <TextView-->
+<!--            android:textSize="20sp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Diet Summary"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:textColor="@color/colorPrimaryDark"-->
+<!--            android:textStyle="bold|italic"/>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_weight="12"-->
+<!--            android:background="#FFFFFF"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp">-->
+
+<!--            <View-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:background="#E5E5E5"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0.5dip"/>-->
+
+<!--            <LinearLayout-->
+<!--                android:gravity="center"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_margin="8dp"-->
+<!--                android:background="#FFFFFF"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp">-->
+
+<!--                <TextView-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Total Food Items"-->
+<!--                    android:textColor="#000000" />-->
+
+<!--                <TextView-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="00"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:id="@+id/totalItems"/>-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:gravity="center"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_margin="8dp"-->
+<!--                android:background="#FFFFFF"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp">-->
+
+<!--                <TextView-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Total Calories"-->
+<!--                    android:textColor="#000000" />-->
+
+<!--                <TextView-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="00"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:id="@+id/totalCalories"/>-->
+<!--            </LinearLayout>-->
+
+    <!--        <View-->
+    <!--            android:layout_marginRight="20dp"-->
+    <!--            android:layout_marginLeft="20dp"-->
+    <!--            android:background="#E5E5E5"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0.5dip"/>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:gravity="center"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:layout_margin="8dp"-->
+    <!--            android:background="#FFFFFF"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp">-->
+
+    <!--            <TextView-->
+    <!--                android:textSize="16sp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="Total Carbs"-->
+    <!--                android:textColor="#AAAAAA" />-->
+
+
+    <!--            <TextView-->
+    <!--                android:textSize="18sp"-->
+    <!--                android:textStyle="bold"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:gravity="center"-->
+    <!--                android:text="0 gms"-->
+    <!--                android:textColor="#000000"-->
+    <!--                android:id="@+id/totalCarbs"/>-->
+    <!--        </LinearLayout>-->
+
+    <!--        <View-->
+    <!--            android:layout_marginRight="20dp"-->
+    <!--            android:layout_marginLeft="20dp"-->
+    <!--            android:background="#E5E5E5"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0.5dip"/>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:gravity="center"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:layout_margin="8dp"-->
+    <!--            android:background="#FFFFFF"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp">-->
+
+    <!--            <TextView-->
+    <!--                android:textSize="16sp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="Total Fats"-->
+    <!--                android:textColor="#AAAAAA" />-->
+
+
+    <!--            <TextView-->
+    <!--                android:textSize="18sp"-->
+    <!--                android:textStyle="bold"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:gravity="center"-->
+    <!--                android:text="0 gms"-->
+    <!--                android:textColor="#000000"-->
+    <!--                android:id="@+id/totalFats"/>-->
+    <!--        </LinearLayout>-->
+
+    <!--        <View-->
+    <!--            android:layout_marginRight="20dp"-->
+    <!--            android:layout_marginLeft="20dp"-->
+    <!--            android:background="#E5E5E5"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0.5dip"/>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:gravity="center"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:layout_margin="8dp"-->
+    <!--            android:background="#FFFFFF"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp">-->
+
+    <!--            <TextView-->
+    <!--                android:textSize="16sp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="Total Proteins"-->
+    <!--                android:textColor="#AAAAAA" />-->
+
+
+    <!--            <TextView-->
+    <!--                android:textSize="18sp"-->
+    <!--                android:textStyle="bold"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:gravity="center"-->
+    <!--                android:text="0 gms"-->
+    <!--                android:textColor="#000000"-->
+    <!--                android:id="@+id/totalProteins"/>-->
+    <!--        </LinearLayout>-->
+
+
+
+<!--        </LinearLayout>-->
+<!--        <TextView-->
+<!--            android:textSize="20sp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Diet Report"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:textColor="@color/colorPrimaryDark"-->
+<!--            android:textStyle="bold|italic"/>-->
+<!--        <FrameLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="80"-->
+<!--            android:id="@+id/report_container"-->
+<!--            app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+<!--        </FrameLayout>-->
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/reports_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:layout_weight="1"
+            app:tabSelectedTextColor="@color/colorPrimaryDark"
+            app:tabTextColor="@color/colorPrimaryDark"
+            app:tabBackground="@drawable/tab_color"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/reports_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="99"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/upload_image_icon"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:tint = "#FFFFFF"
+        app:fabSize="auto" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

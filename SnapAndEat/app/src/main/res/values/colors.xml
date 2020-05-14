@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00574B</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorTab">#FFFFFF</color>
+    <color name="colorBarChartCalories">#1979a9</color>
+    <color name="colorBarChartCarbs">#e07b39</color>
+    <color name="colorBarChartFats">#69bdd2</color>
+    <color name="colorBarChartProteins">#80391e</color>
+</resources>

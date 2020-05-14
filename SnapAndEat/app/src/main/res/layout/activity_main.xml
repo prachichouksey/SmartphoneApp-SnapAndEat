@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/landingpage"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/landingtext"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Track and Build new eating habits." />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/landingtext"
+            android:id="@+id/landingtext1"
+            android:textColor="#808080"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:text="Start building recurring habits the smart way." />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_item"
+            android:gravity="center"
+            android:layout_below="@+id/landingtext1">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/landingtext"
+                android:layout_margin="5dp"
+                app:backgroundTint="@color/colorPrimaryDark"
+                android:text="Log in"
+                android:onClick="handleLogin"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/landingtext"
+                android:layout_margin="5dp"
+                app:backgroundTint="@color/colorPrimaryDark"
+                android:text="Sign up"
+                android:onClick="handleSignup"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

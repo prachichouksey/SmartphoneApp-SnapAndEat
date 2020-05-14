@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_item">
+
+        <ImageView
+            android:id="@+id/cafe_image"
+            android:layout_width="100sp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:layout_margin="5dp">
+            <TextView
+                android:id="@+id/cafe_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cafe_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:textSize="15sp"
+                android:textColor="#000000"/>
+            </LinearLayout>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:tooltipText="Add to diet report"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_report_add"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:id="@+id/save_report"/>
+        </LinearLayout>
+<!--        <TextView-->
+<!--            android:id="@+id/cafe_rating"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="1dp"-->
+<!--            android:gravity="center"-->
+<!--            android:textSize="18sp" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:gravity="center">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_rating"
+                    android:backgroundTint="@color/colorPrimaryDark"/>
+                <TextView
+                    android:id="@+id/cafe_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/cafe_distance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:layout_weight="2"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/cafe_timing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:layout_weight="2"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/cafe_pricing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:textColor="#000000"/>
+            </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/layout_item"
+        android:background="#e1e5e9" />
+</RelativeLayout>

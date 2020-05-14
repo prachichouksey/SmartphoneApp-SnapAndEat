@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F3F2F7"
+    android:weightSum="100"
+    tools:context=".ImageActivity">
+
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="54dp">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/ic_arrow_back"
+            android:id="@+id/imgClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="backPressed"/>
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="22sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="center"
+            android:text="Food Info"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_weight="50"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+        <!-- To display picture taken -->
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/imgPreview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/camera" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="50"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+            <TextView
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Predicted Food Item"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textColor="#000000"
+                android:id="@+id/itemName"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <TextView
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Accuracy"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.0"
+                    android:textColor="#000000"
+                    android:id="@+id/itemAccuracy"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="#E5E5E5"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calories"
+                android:textColor="#AAAAAA" />
+
+            <TextView
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="00"
+                android:textColor="#000000"
+                android:id="@+id/itemCalories"/>
+        </LinearLayout>
+
+        <View
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="#E5E5E5"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carbs"
+                android:textColor="#AAAAAA" />
+
+
+            <TextView
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0 gms"
+                android:textColor="#000000"
+                android:id="@+id/itemCarbs"/>
+        </LinearLayout>
+
+        <View
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="#E5E5E5"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Proteins"
+                android:textColor="#AAAAAA" />
+
+
+            <TextView
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0 gms"
+                android:textColor="#000000"
+                android:id="@+id/itemFats"/>
+        </LinearLayout>
+
+        <View
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="#E5E5E5"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fats"
+                android:textColor="#AAAAAA" />
+
+
+            <TextView
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0 gms"
+                android:textColor="#000000"
+                android:id="@+id/itemProteins"/>
+        </LinearLayout>
+
+        <View
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="#E5E5E5"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/search_button"
+            android:onClick="searchRestaurants"
+            android:text="Search Nearby Restaurants"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#FFFFFF"
+            android:layout_margin="5dp"
+            android:padding="5dp" />
+
+    </LinearLayout>
+</LinearLayout>
